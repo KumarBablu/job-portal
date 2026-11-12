@@ -1,0 +1,575 @@
+[
+  {
+    "id": "how many years experience in business analyst?",
+    "question": "How many years experience in Business Analyst?",
+    "normalized": "how many years experience in business analyst?",
+    "answer": "3.5",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-11-12T08:24:15",
+    "last_seen": "2026-11-12T08:24:15"
+  },
+  {
+    "id": "how much experience in alteryx workflow?",
+    "question": "How much experience in Alteryx workflow?",
+    "normalized": "how much experience in alteryx workflow?",
+    "answer": "3.5",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-11-12T08:24:08",
+    "last_seen": "2026-11-12T08:24:08"
+  },
+  {
+    "id": ">12 years",
+    "question": ">12 years",
+    "normalized": ">12 years",
+    "answer": "No experience",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-11-12T08:24:06",
+    "last_seen": "2026-11-12T08:24:06"
+  },
+  {
+    "id": "no",
+    "question": "No",
+    "normalized": "no",
+    "answer": "Yes",
+    "source": "naukri",
+    "count": 18,
+    "first_seen": "2026-08-01T16:25:53",
+    "last_seen": "2026-11-12T08:24:03"
+  },
+  {
+    "id": "what is your overall experience?",
+    "question": "What is your overall experience?",
+    "normalized": "what is your overall experience?",
+    "answer": "3.5",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-11-12T08:23:27",
+    "last_seen": "2026-11-12T08:23:27"
+  },
+  {
+    "id": "what is your current company.",
+    "question": "What is your Current Company.",
+    "normalized": "what is your current company.",
+    "answer": "Nobroker",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-11-12T08:23:21",
+    "last_seen": "2026-11-12T08:23:21"
+  },
+  {
+    "id": "are you comfortable working in 2pm-11pm shift?",
+    "question": "Are you comfortable working in 2pm-11pm shift?",
+    "normalized": "are you comfortable working in 2pm-11pm shift?",
+    "answer": "Yes",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-11-12T08:22:35",
+    "last_seen": "2026-11-12T08:22:35"
+  },
+  {
+    "id": "what is your official last working day? (if serving notice)",
+    "question": "What is your official Last working day? (if serving notice)",
+    "normalized": "what is your official last working day? (if serving notice)",
+    "answer": "1 Month",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-11-12T08:22:29",
+    "last_seen": "2026-11-12T08:22:29"
+  },
+  {
+    "id": "bengaluru, karnataka",
+    "question": "Bengaluru, Karnataka",
+    "normalized": "bengaluru, karnataka",
+    "answer": "Hyderabad, Telangana",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-11-12T08:22:26",
+    "last_seen": "2026-11-12T08:22:26"
+  },
+  {
+    "id": "how many years of experience do you have in dashboarding?",
+    "question": "How many years of experience do you have in Dashboarding?",
+    "normalized": "how many years of experience do you have in dashboarding?",
+    "answer": "3.5",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-11-12T08:22:20",
+    "last_seen": "2026-11-12T08:22:20"
+  },
+  {
+    "id": "dealer / distributers",
+    "question": "Dealer / Distributers",
+    "normalized": "dealer / distributers",
+    "answer": "Direct-to-Consumer (D2C)",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T15:36:22",
+    "last_seen": "2026-08-14T15:36:22"
+  },
+  {
+    "id": "others",
+    "question": "Others",
+    "normalized": "others",
+    "answer": "Food & Beverages",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T15:36:18",
+    "last_seen": "2026-08-14T15:36:18"
+  },
+  {
+    "id": "key account mgmt",
+    "question": "Key Account Mgmt",
+    "normalized": "key account mgmt",
+    "answer": "Field Sales",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T15:36:14",
+    "last_seen": "2026-08-14T15:36:14"
+  },
+  {
+    "id": "how many years of experience do you have in sales support?",
+    "question": "How many years of experience do you have in Sales Support?",
+    "normalized": "how many years of experience do you have in sales support?",
+    "answer": "3.5",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T15:36:04",
+    "last_seen": "2026-08-14T15:36:04"
+  },
+  {
+    "id": ">6 years",
+    "question": ">6 years",
+    "normalized": ">6 years",
+    "answer": "No experience",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T15:15:52",
+    "last_seen": "2026-08-14T15:15:52"
+  },
+  {
+    "id": "bengaluru",
+    "question": "Bengaluru",
+    "normalized": "bengaluru",
+    "answer": "Pune",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T15:15:31",
+    "last_seen": "2026-08-14T15:15:31"
+  },
+  {
+    "id": "how many years of experience do you have in equis?",
+    "question": "How many years of experience do you have in EQUIS?",
+    "normalized": "how many years of experience do you have in equis?",
+    "answer": "3.5",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T15:15:24",
+    "last_seen": "2026-08-14T15:15:24"
+  },
+  {
+    "id": "employee code in case they have worked in the past",
+    "question": "Employee Code in case they have worked in the past",
+    "normalized": "employee code in case they have worked in the past",
+    "answer": "3",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T15:14:05",
+    "last_seen": "2026-08-14T15:14:05"
+  },
+  {
+    "id": "middle name",
+    "question": "Middle Name",
+    "normalized": "middle name",
+    "answer": "Bablu Kumar",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T15:13:58",
+    "last_seen": "2026-08-14T15:13:58"
+  },
+  {
+    "id": "none",
+    "question": "None",
+    "normalized": "none",
+    "answer": "CRISIL",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T15:13:53",
+    "last_seen": "2026-08-14T15:13:53"
+  },
+  {
+    "id": "more than 90 days",
+    "question": "More than 90 Days",
+    "normalized": "more than 90 days",
+    "answer": "Immediate",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T15:13:47",
+    "last_seen": "2026-08-14T15:13:47"
+  },
+  {
+    "id": "3500000+",
+    "question": "3500000+",
+    "normalized": "3500000+",
+    "answer": "less than 50000",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T15:13:44",
+    "last_seen": "2026-08-14T15:13:44"
+  },
+  {
+    "id": "post doctorate",
+    "question": "Post Doctorate",
+    "normalized": "post doctorate",
+    "answer": "Bachelors",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T15:13:41",
+    "last_seen": "2026-08-14T15:13:41"
+  },
+  {
+    "id": "current location",
+    "question": "Current Location",
+    "normalized": "current location",
+    "answer": "Bangalore",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T15:13:35",
+    "last_seen": "2026-08-14T15:13:35"
+  },
+  {
+    "id": "preferred location",
+    "question": "Preferred Location",
+    "normalized": "preferred location",
+    "answer": "Bangalore, Hyderabad, Pune",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T15:13:28",
+    "last_seen": "2026-08-14T15:13:28"
+  },
+  {
+    "id": "how many years of experience working in sap?",
+    "question": "How many years of experience working in SAP?",
+    "normalized": "how many years of experience working in sap?",
+    "answer": "3.5",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T14:59:50",
+    "last_seen": "2026-08-14T14:59:50"
+  },
+  {
+    "id": "how many years of experience do you have in data analysis in finance",
+    "question": "How many years of experience do you have in Data Analysis in Finance",
+    "normalized": "how many years of experience do you have in data analysis in finance",
+    "answer": "3.5",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T14:59:43",
+    "last_seen": "2026-08-14T14:59:43"
+  },
+  {
+    "id": "how many years of experience do you have in data analysis?",
+    "question": "How many years of experience do you have in Data Analysis?",
+    "normalized": "how many years of experience do you have in data analysis?",
+    "answer": "3.5",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T14:59:37",
+    "last_seen": "2026-08-14T14:59:37"
+  },
+  {
+    "id": "got it!",
+    "question": "Got it!",
+    "normalized": "got it!",
+    "answer": "3",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T14:59:31",
+    "last_seen": "2026-08-14T14:59:31"
+  },
+  {
+    "id": "skip",
+    "question": "Skip",
+    "normalized": "skip",
+    "answer": "IFRS",
+    "source": "naukri",
+    "count": 3,
+    "first_seen": "2026-08-01T16:26:06",
+    "last_seen": "2026-08-14T14:59:28"
+  },
+  {
+    "id": ">8 years",
+    "question": ">8 years",
+    "normalized": ">8 years",
+    "answer": "No experience",
+    "source": "naukri",
+    "count": 2,
+    "first_seen": "2026-08-14T14:49:15",
+    "last_seen": "2026-08-14T14:58:21"
+  },
+  {
+    "id": "chennai",
+    "question": "Chennai",
+    "normalized": "chennai",
+    "answer": "Hyderabad, Telangana",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T14:58:03",
+    "last_seen": "2026-08-14T14:58:03"
+  },
+  {
+    "id": "how many years of experience do you have in privacy tools?",
+    "question": "How many years of experience do you have in Privacy tools?",
+    "normalized": "how many years of experience do you have in privacy tools?",
+    "answer": "3.5",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T14:57:56",
+    "last_seen": "2026-08-14T14:57:56"
+  },
+  {
+    "id": "how many years of experience do you have in gdpr?",
+    "question": "How many years of experience do you have in Gdpr?",
+    "normalized": "how many years of experience do you have in gdpr?",
+    "answer": "3.5",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T14:57:50",
+    "last_seen": "2026-08-14T14:57:50"
+  },
+  {
+    "id": "how many years of experience do you have in data privacy?",
+    "question": "How many years of experience do you have in Data Privacy?",
+    "normalized": "how many years of experience do you have in data privacy?",
+    "answer": "3.5",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T14:57:43",
+    "last_seen": "2026-08-14T14:57:43"
+  },
+  {
+    "id": "how many years of experience do you have in data protection?",
+    "question": "How many years of experience do you have in Data Protection?",
+    "normalized": "how many years of experience do you have in data protection?",
+    "answer": "3.5",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T14:57:36",
+    "last_seen": "2026-08-14T14:57:36"
+  },
+  {
+    "id": "excellent",
+    "question": "Excellent",
+    "normalized": "excellent",
+    "answer": "Average",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T14:54:36",
+    "last_seen": "2026-08-14T14:54:36"
+  },
+  {
+    "id": "how many years of experience do you have in sql, azure synapse , power bi?",
+    "question": "How many years of experience do you have in SQL, AZURE Synapse , Power BI?",
+    "normalized": "how many years of experience do you have in sql, azure synapse , power bi?",
+    "answer": "3.5",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T14:50:53",
+    "last_seen": "2026-08-14T14:50:53"
+  },
+  {
+    "id": "yes - surely will attend on 5th mar (thursday)",
+    "question": "Yes - Surely will attend on 5th Mar (Thursday)",
+    "normalized": "yes - surely will attend on 5th mar (thursday)",
+    "answer": "No - Not sure",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T14:50:50",
+    "last_seen": "2026-08-14T14:50:50"
+  },
+  {
+    "id": "ug or bachelor or graduation , if you done pg or master in fulltime mention with year of completion ?",
+    "question": "Ug or Bachelor or Graduation , If you done PG or master in fulltime mention with year of completion ?",
+    "normalized": "ug or bachelor or graduation , if you done pg or master in fulltime mention with year of completion ?",
+    "answer": "3",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T14:50:44",
+    "last_seen": "2026-08-14T14:50:44"
+  },
+  {
+    "id": "12th or if done only diploma please mention how many years & years of completion (clearly & only fulltime)",
+    "question": "12th or If done only Diploma please mention how many years & years of completion (clearly & only fulltime)",
+    "normalized": "12th or if done only diploma please mention how many years & years of completion (clearly & only fulltime)",
+    "answer": "3.5",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T14:50:37",
+    "last_seen": "2026-08-14T14:50:37"
+  },
+  {
+    "id": "10th or diploma which year completed?",
+    "question": "10th or diploma Which year completed?",
+    "normalized": "10th or diploma which year completed?",
+    "answer": "3",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T14:50:30",
+    "last_seen": "2026-08-14T14:50:30"
+  },
+  {
+    "id": "are you available - virtual interview on 5th mar (thursday) -if yes, mention time & alternative date & time also from 10 am to 4pm..mention 2 slot",
+    "question": "Are you available - Virtual interview on 5th Mar (Thursday) -If yes, Mention Time & alternative date & time also from 10 am to 4pm..Mention 2 slot",
+    "normalized": "are you available - virtual interview on 5th mar (thursday) -if yes, mention time & alternative date & time also from 10 am to 4pm..mention 2 slot",
+    "answer": "Yes",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T14:50:24",
+    "last_seen": "2026-08-14T14:50:24"
+  },
+  {
+    "id": "how many years of experience do you have in collibra?",
+    "question": "How many years of experience do you have in Collibra?",
+    "normalized": "how many years of experience do you have in collibra?",
+    "answer": "3.5",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T14:48:47",
+    "last_seen": "2026-08-14T14:48:47"
+  },
+  {
+    "id": "how many years of experience do you have in aws cloud?",
+    "question": "How many years of experience do you have in AWS Cloud?",
+    "normalized": "how many years of experience do you have in aws cloud?",
+    "answer": "3.5",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T14:48:40",
+    "last_seen": "2026-08-14T14:48:40"
+  },
+  {
+    "id": "hyderabad",
+    "question": "Hyderabad",
+    "normalized": "hyderabad",
+    "answer": "Bengaluru",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T14:47:00",
+    "last_seen": "2026-08-14T14:47:00"
+  },
+  {
+    "id": "how many years of experience do you have in erwin?",
+    "question": "How many years of experience do you have in ERwin?",
+    "normalized": "how many years of experience do you have in erwin?",
+    "answer": "3.5",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-14T14:46:53",
+    "last_seen": "2026-08-14T14:46:53"
+  },
+  {
+    "id": "how many years of experience do you have in mdm?",
+    "question": "How many years of experience do you have in MDM?",
+    "normalized": "how many years of experience do you have in mdm?",
+    "answer": "2",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-05T09:51:55",
+    "last_seen": "2026-08-05T09:51:55",
+    "updated_at": "2026-08-05T09:59:03"
+  },
+  {
+    "id": "how many years of experience do you have in data quality management?",
+    "question": "How many years of experience do you have in Data Quality Management?",
+    "normalized": "how many years of experience do you have in data quality management?",
+    "answer": "3.5",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-05T09:51:48",
+    "last_seen": "2026-08-05T09:51:48"
+  },
+  {
+    "id": "how many years of experience do you have in data governance analyst?",
+    "question": "How many years of experience do you have in Data Governance Analyst?",
+    "normalized": "how many years of experience do you have in data governance analyst?",
+    "answer": "3.5",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-05T09:51:42",
+    "last_seen": "2026-08-05T09:51:42"
+  },
+  {
+    "id": "how many years of experience do you have in pivot table?",
+    "question": "How many years of experience do you have in Pivot Table?",
+    "normalized": "how many years of experience do you have in pivot table?",
+    "answer": "3.5",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-01T16:30:09",
+    "last_seen": "2026-08-01T16:30:09"
+  },
+  {
+    "id": "how many years of experience do you have in vlookup?",
+    "question": "How many years of experience do you have in VLOOKUP?",
+    "normalized": "how many years of experience do you have in vlookup?",
+    "answer": "3.5",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-01T16:30:00",
+    "last_seen": "2026-08-01T16:30:00"
+  },
+  {
+    "id": "how many years of experience do you have in excel automation?",
+    "question": "How many years of experience do you have in Excel Automation?",
+    "normalized": "how many years of experience do you have in excel automation?",
+    "answer": "3.5",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-01T16:28:20",
+    "last_seen": "2026-08-01T16:28:20"
+  },
+  {
+    "id": "what is your official notice period? if serving when is the lwd?",
+    "question": "What is your official notice period? If serving when is the LWD?",
+    "normalized": "what is your official notice period? if serving when is the lwd?",
+    "answer": "1 Month",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-01T16:27:41",
+    "last_seen": "2026-08-01T16:27:41"
+  },
+  {
+    "id": "what is your current ctc and expected ctc in lacs per annum?",
+    "question": "What is your current CTC and expected CTC in Lacs per annum?",
+    "normalized": "what is your current ctc and expected ctc in lacs per annum?",
+    "answer": "Curren 8 LPA, Expected 12 LPA",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-01T16:27:34",
+    "last_seen": "2026-08-01T16:27:34",
+    "updated_at": "2026-08-05T09:59:47"
+  },
+  {
+    "id": "how many years of experience do you have in mis operations?",
+    "question": "How many years of experience do you have in MIS Operations?",
+    "normalized": "how many years of experience do you have in mis operations?",
+    "answer": "3.5",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-01T16:26:55",
+    "last_seen": "2026-08-01T16:26:55"
+  },
+  {
+    "id": "what is your current ctc in lacs per annum?in hand per month",
+    "question": "What is your current CTC in Lacs per annum?In hand Per month",
+    "normalized": "what is your current ctc in lacs per annum?in hand per month",
+    "answer": "7 LPA",
+    "source": "naukri",
+    "count": 1,
+    "first_seen": "2026-08-01T16:26:49",
+    "last_seen": "2026-08-01T16:26:49",
+    "updated_at": "2026-08-05T10:00:07"
+  }
+]

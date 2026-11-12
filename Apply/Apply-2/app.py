@@ -1803,10 +1803,39 @@ def make_driver() -> webdriver.Chrome:
     """
     from selenium.webdriver.chrome.service import Service
 
+    import shutil
+    import sys
+
+    def is_chrome_available() -> bool:
+        cp = os.environ.get("CHROMEDRIVER_PATH", "").strip()
+        if cp and os.path.exists(cp):
+            return True
+        for name in ("google-chrome", "google-chrome-stable", "chromium", "chromium-browser", "chrome"):
+            if shutil.which(name):
+                return True
+        if os.name == "nt":
+            for p in (
+                r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+                r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
+                os.path.expandvars(r"%LOCALAPPDATA%\Google\Chrome\Application\chrome.exe"),
+            ):
+                if os.path.exists(p):
+                    return True
+        return False
+
+    if not is_chrome_available():
+        raise RuntimeError("Google Chrome binary not found on this system. (Cloud environment detected without Chrome)")
+
     def new_options(minimal: bool = False) -> Options:
         opts = Options()
-        opts.add_argument("--start-maximized")
         opts.add_argument("--disable-blink-features=AutomationControlled")
+        if sys.platform != "win32" or os.environ.get("HEADLESS", "0") == "1":
+            opts.add_argument("--headless=new")
+            opts.add_argument("--no-sandbox")
+            opts.add_argument("--disable-dev-shm-usage")
+            opts.add_argument("--window-size=1920,1080")
+        else:
+            opts.add_argument("--start-maximized")
         opts.add_argument("--disable-gpu")
         opts.add_argument("--disable-dev-shm-usage")
         opts.add_argument("--disable-extensions")

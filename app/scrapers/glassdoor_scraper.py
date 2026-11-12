@@ -370,20 +370,30 @@ def _try_selenium(keyword, location, max_jobs, log):
 
     try:
 
+        from app.automation.browser import get_chrome_driver, is_chrome_available
+        if not is_chrome_available():
+            log("  ⚠ Browser fallback skipped: Google Chrome is not installed on this cloud server.")
+            return []
+
         log("  Launching browser fallback...")
-
+        import sys
         options = Options()
-
         options.add_argument("--disable-blink-features=AutomationControlled")
-        options.add_argument("--start-maximized")
+        if sys.platform != "win32" or os.environ.get("HEADLESS") == "1":
+            options.add_argument("--headless=new")
+            options.add_argument("--no-sandbox")
+            options.add_argument("--disable-dev-shm-usage")
+            options.add_argument("--window-size=1920,1080")
+        else:
+            options.add_argument("--start-maximized")
         options.add_argument("--disable-notifications")
         options.add_argument("--disable-popup-blocking")
 
-        # Uncomment for headless mode
-        # options.add_argument("--headless=new")
-
-        from app.automation.browser import get_chrome_driver
-        driver = get_chrome_driver(options)
+        try:
+            driver = get_chrome_driver(options)
+        except Exception as e:
+            log(f"  ⚠ Browser fallback unavailable: {e}")
+            return []
 
         url = (
             "https://www.glassdoor.co.in/Job/jobs.htm?"

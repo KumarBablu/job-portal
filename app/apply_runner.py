@@ -348,6 +348,24 @@ def _run_apply_job(job_refs: list | None = None, filters: dict | None = None):
             except Exception:
                 pass
 
+        from app.automation.browser import is_chrome_available
+        if not is_chrome_available():
+            _log("⚠ Automated browser auto-apply requires Google Chrome.")
+            _log("ℹ Note: Current server environment does not have Google Chrome installed.")
+            _log("💡 Options for applying:")
+            _log("   1. Open any job in the Jobs tab and tap 'Apply on Portal ↗' with your tailored AI pack.")
+            _log("   2. Run locally on your PC (python run.py) where your Chrome browser is logged in.")
+            _log("   3. Deploy via Docker with Chrome pre-installed.")
+            STATE["summary"] = {
+                "updated_rows": 0,
+                "applied_jobs": 0,
+                "external_portal_jobs": 0,
+                "total_rows": len(selected_jobs),
+                "synced_urls": 0,
+                "status_breakdown": {"Chrome Required": len(selected_jobs)},
+            }
+            return
+
         command = [sys.executable, str(APPLY_ROOT / "app.py")]
         _log(f"🚀 Starting auto-apply for {len(selected_jobs)} jobs")
         env = os.environ.copy()

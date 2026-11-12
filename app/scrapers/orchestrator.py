@@ -61,6 +61,10 @@ def _scrape_platform_task(keyword, location, platform, max_jobs, log_fn, freshne
             from app.scrapers.glassdoor_scraper import scrape_glassdoor
             jobs = scrape_glassdoor(keyword, location, max_jobs, log_fn)
 
+        elif platform in ("open-jobs", "openjobs", "remote"):
+            from app.scrapers.open_jobs_scraper import scrape_open_jobs
+            jobs = scrape_open_jobs(keyword, location, max_jobs, log_fn)
+
         else:
             jobs = []
 
@@ -161,6 +165,27 @@ def run_scrape_job(config):
                 pass
         else:
             _log("⚠ No platforms, keywords, or locations provided for scraping")
+
+        # Cloud Fallback: If 0 jobs found (e.g. cloud datacenter blocked by Naukri/Indeed/Glassdoor),
+        # query open APIs automatically so the mobile scan never returns empty.
+        if (new_count == 0 and updated_count == 0) and "open-jobs" not in platforms:
+            _log("ℹ Cloud fallback: Selected platforms returned 0 jobs (typical on datacenter/cloud IPs). Automatically querying Open Job Feeds (Jobicy & Arbeitnow)...")
+            try:
+                from app.scrapers.open_jobs_scraper import scrape_open_jobs
+                target_kws = keywords if keywords else ["Data Analyst"]
+                for kw in target_kws[:3]:
+                    fallback_jobs = scrape_open_jobs(kw, locations[0] if locations else "Remote", max_jobs=max_jobs, log_fn=_log)
+                    for job in fallback_jobs:
+                        jid = job.get("Job ID", "")
+                        if not jid:
+                            continue
+                        if jid not in all_jobs:
+                            all_jobs[jid] = job
+                            new_count += 1
+                        else:
+                            updated_count += 1
+            except Exception as fe:
+                _log(f"  Fallback notice: {fe}")
 
         _log("─" * 48)
         _log(f"📦 New jobs found: {new_count}  |  Updated existing jobs: {updated_count} | Total in database: {len(all_jobs)}")

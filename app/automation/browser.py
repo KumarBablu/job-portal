@@ -1,28 +1,41 @@
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 
+import os
+import sys
+import shutil
+
 # Persistent profile keeps login sessions
 PROFILE_PATH = Path(__file__).resolve().parent.parent.parent / "data" / "browser" / "profile"
 PROFILE_PATH.mkdir(parents=True, exist_ok=True)
 
 
+def is_chrome_available() -> bool:
+    """Return True if a Google Chrome or Chromium executable exists on this system."""
+    cp = os.environ.get("CHROMEDRIVER_PATH", "").strip()
+    if cp and os.path.exists(cp):
+        return True
+    for name in ("google-chrome", "google-chrome-stable", "chromium", "chromium-browser", "chrome"):
+        if shutil.which(name):
+            return True
+    if os.name == "nt":
+        for p in (
+            r"C:\Program Files\Google\Chrome\Application\chrome.exe",
+            r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
+            os.path.expandvars(r"%LOCALAPPDATA%\Google\Chrome\Application\chrome.exe"),
+        ):
+            if os.path.exists(p):
+                return True
+    return False
+
+
 def get_chrome_driver(options=None):
     """Build a Selenium Chrome WebDriver, resilient to Selenium Manager
-    crashes (a known flaky Windows issue — the bundled Rust binary that
-    auto-detects Chrome/chromedriver sometimes fails with a "memory
-    allocation failed" error, usually due to antivirus interference).
-
-    Tries, in order: plain Selenium Manager, an explicit CHROMEDRIVER_PATH
-    env var, webdriver-manager (downloads a matching driver itself,
-    bypassing Selenium Manager), then undetected-chromedriver.
-    Used by the Naukri/Indeed/Glassdoor Selenium browser-fallback scrapers.
-
-    IMPORTANT: every attempt gets its own fresh copy of the caller's Chrome
-    options. Reusing a single Options object across attempts is unsafe —
-    undetected-chromedriver mutates whatever Options object it's given,
-    which would silently corrupt a shared object and break a later attempt
-    with confusing errors like "unrecognized chrome option: excludeSwitches".
+    crashes and properly configured for cloud / container headless execution.
     """
+    if not is_chrome_available():
+        raise RuntimeError("Google Chrome binary not found on this system. (Cloud environment detected without Chrome)")
+
     import os
     from selenium import webdriver
     from selenium.webdriver.chrome.options import Options
@@ -41,9 +54,16 @@ def get_chrome_driver(options=None):
                         fresh.add_experimental_option(key, val)
                     except Exception:
                         pass
-        # Memory-frugal flags — reduce Chrome's own memory footprint, which
-        # matters on machines where Windows' pagefile is too small to grant
-        # Chrome all the memory it would normally use.
+
+        # Headless and sandbox flags for Linux / Cloud servers
+        if sys.platform != "win32" or os.environ.get("HEADLESS", "0") == "1":
+            for flag in ("--headless=new", "--no-sandbox", "--disable-dev-shm-usage", "--window-size=1920,1080"):
+                if flag not in fresh.arguments:
+                    fresh.add_argument(flag)
+            if "--start-maximized" in fresh.arguments:
+                fresh.arguments.remove("--start-maximized")
+
+        # Memory-frugal flags
         for flag in ("--disable-gpu", "--disable-dev-shm-usage", "--disable-extensions",
                      "--disable-background-networking", "--disable-default-apps",
                      "--disable-sync", "--metrics-recording-only", "--mute-audio",
